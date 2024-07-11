@@ -40,7 +40,7 @@ void    ft_check_sorrounders(t_game *game)
 
 void    ft_check_chr(t_game *game, char letter, int y, int x)
 {
-    if (!ft_strchr("LECP01", letter))
+    if (!ft_strchr("ECP01", letter))
         ft_error_game("Invalid characters", game);
     else if (letter == COINS)
         game->coins++;
